@@ -6,11 +6,17 @@
     
 
     .config(function($stateProvider) {
-
+      $stateProvider.state('userInput', {
+        url: '/userInput',
+        templateUrl: 'views/userInput.html',
+        controller: 'userInputController'
+      })
     })
 
 
-    .run(function() {
+    .run(function($location) {
+
+      $location.url('/userInput');
 
     });
 
