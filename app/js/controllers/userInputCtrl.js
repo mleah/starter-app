@@ -6,7 +6,16 @@ angular
 
   function userInputController($scope, basicFactory) {
 
-    $scope.helloTimesTwo = basicFactory.sayHello();
+    $scope.helloTimesTwo = basicFactory.sayHelloFactory();
+
+
+    $scope.sayHello = _sayHello;
+
+    function _sayHello(name) {
+
+      $scope.greeting = "Hello " + name + " !";
+
+    }
 
   }
 

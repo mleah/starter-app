@@ -9,11 +9,11 @@ angular
 
     var factory = {
 
-      sayHello: _sayHello
+      sayHelloFactory: _sayHelloFactory
 
     }
 
-    function _sayHello() {
+    function _sayHelloFactory() {
       return "Hi!  I am coming from the basic Factory!";
     }
 

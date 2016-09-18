@@ -2,4 +2,15 @@
   
   <div class="secondHello">{{helloTimesTwo}}</div>
 
+  <form name="helloWorld" ng-submit="sayHello(name)">
+
+    <input type="text" name="name" ng-model="name" required />
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <div class="greeting">{{greeting}}</div> 
+
+
 </div>

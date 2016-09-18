@@ -1,3 +1,8 @@
 .secondHello {
   color: blue;
 }
+
+.greeting {
+  font-size: 25px;
+  color: green;
+}
