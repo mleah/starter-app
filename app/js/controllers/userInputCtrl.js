@@ -2,11 +2,11 @@
 
 angular
   .module('starterApp')
-  .controller('userInputController', ['$scope', userInputController]);
+  .controller('userInputController', ['$scope', 'basicFactory', userInputController]);
 
-  function userInputController($scope) {
+  function userInputController($scope, basicFactory) {
 
-    $scope.helloTimesTwo = "Hey I am a nested controller!!";
+    $scope.helloTimesTwo = basicFactory.sayHello();
 
   }
 
